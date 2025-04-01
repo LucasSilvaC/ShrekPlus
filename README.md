@@ -1,5 +1,5 @@
 # 👋 &nbsp;Hi there
-# ShreFlix
+# ShrekFlix
 Project for streaming Shrek movies
 
 &nbsp;
