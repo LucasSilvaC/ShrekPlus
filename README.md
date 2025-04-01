@@ -14,6 +14,7 @@ Project for streaming Shrek movies
 ## 📖 &nbsp;Library
 <h3>npm install tailwindcss @tailwindcss/vite</h3>
 <h3>npm install react-router-dom</h3>
+<h3>npm i react-icons</h3>
 
 &nbsp;
 
