@@ -1,22 +1,12 @@
-# 👋 &nbsp;Hi there
-# ShrekPlus
-Project for streaming Shrek movies
+# React + Vite
 
-&nbsp;
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-## 🧰 &nbsp;My toolbox
+Currently, two official plugins are available:
 
-<img  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" alt="Tailwind" width="50" height="50"/>&nbsp;
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" alt="React" width="50" height="50"/>
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-&nbsp;
+## Expanding the ESLint configuration
 
-## 📖 &nbsp;Library
-<h3>npm install tailwindcss @tailwindcss/vite</h3>
-<h3>npm install react-router-dom</h3>
-<h3>npm i react-icons</h3>
-
-&nbsp;
-
-## 🖥 &nbsp;Repository
-[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=LucasSilvaC&repo=ShrekPlusa&bg_color=0d1116&title_color=ce09ec&text_color=a4aacb&icon_color=007ec6)](https://github.com/LucasSilvaC/ShrekPlus) &nbsp;
+If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
