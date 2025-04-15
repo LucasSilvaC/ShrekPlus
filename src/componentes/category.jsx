@@ -1,18 +1,25 @@
 import React from 'react';
 
 export default function Category() {
+    const categorias = [
+        'Arthur', 'Burro', 'Biscoito', 'Encantado', 'Farquaad',
+        'Fiona', 'Gato de botas', 'Pinoquio', 'Shrek'
+    ];
+
     return (
-        <section className="h-9 w-auto border-b border-gray-800">
-            <ul className="flex text-white justify-between pl-20 pr-20 mt-4">
-                <li className="text-white cursor-pointer hover:text-[#84A600]">Arthur</li>
-                <li className="text-white cursor-pointer hover:text-[#84A600]">Burro</li>
-                <li className="text-white cursor-pointer hover:text-[#84A600]">Biscoito</li>
-                <li className="text-white cursor-pointer hover:text-[#84A600]">Encantado</li>
-                <li className="text-white cursor-pointer hover:text-[#84A600]">Farquaad</li>
-                <li className="text-white cursor-pointer hover:text-[#84A600]">Fiona</li>
-                <li className="text-white cursor-pointer hover:text-[#84A600]">Gato de botas</li>
-                <li className="text-white cursor-pointer hover:text-[#84A600]">Pinoquio</li>
-                <li className="text-white cursor-pointer hover:text-[#84A600]" style={{ fontFamily: "'ShrekFont', sans-serif" }}>Shrek</li>
+        <section className="w-full border-b border-gray-800 bg-black">
+            <ul className="flex justify-between text-white px-20 py-4 text-lg">
+                {categorias.map((cat, index) => (
+                    <li
+                        key={index}
+                        className={`cursor-pointer transition-all duration-200 transform hover:-translate-y-1 hover:text-[#84A600] ${
+                            cat === 'Shrek' ? 'font-bold text-[#84A600]' : ''
+                        }`}
+                        style={cat === 'Shrek' ? { fontFamily: "'ShrekFont', sans-serif" } : {}}
+                    >
+                        {cat}
+                    </li>
+                ))}
             </ul>
         </section>
     );

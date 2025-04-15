@@ -10,8 +10,9 @@ export default function List() {
 
     useEffect(() => {
         axios
-           // Endpoint `/search/movie` com query "shrek"
-            .get(`${API_URL}/search/movie?api_key=${API_key}&query=shrek&language=pt-BR`)
+            .get(`${API_URL}/search/movie?api_key=${API_key}&query=shrek&language=pt-BR`) 
+            // .get(`${API_URL}/movie/now_playing?api_key=${API_key}&language=pt-BR&region=BR`)
+            //axios.get(`${API_URL}/movie/popular?api_key=${API_KEY}&language=pt-BR`) <> variavel/search para especificar
             .then((response) => {
                 setMovies(response.data.results);
             })

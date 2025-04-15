@@ -31,15 +31,15 @@ export default function Header() {
                     <input
                         type="text"
                         placeholder="Pesquisar"
-                        className={`bg-transparent outline-none focus:outline-none focus:ring-0 text-[#84A600] px-2 placeholder-[#84A600] text-xl transition-all duration-300 ${isExpanded ? 'w-40 opacity-100' : 'w-0 opacity-0'}`}
+                        className={`bg-transparent outline-none focus:outline-none focus:ring-0 text-[#84A600] px-2 text-xl transition-all duration-300 ${isExpanded ? 'w-40 opacity-100' : 'w-0 opacity-0'}`}
                     />
                 </div>
 
                 <nav>
                     <ul className="flex gap-10 text-amber-50 text-2xl">
-                        <li className="cursor-pointer hover:text-[#84A600]" onClick={() => navigate("/home")}>Home</li>
-                        <li className="cursor-pointer hover:text-[#84A600]" onClick={() => navigate("/series")}>Series</li>
-                        <li className="cursor-pointer hover:text-[#84A600]" onClick={() => navigate("/filmes")}>Filmes</li>
+                        <li className="cursor-pointer transition-all duration-200 transform hover:text-[#84A600] hover:-translate-y-1" onClick={() => navigate("/home")}>Home</li>
+                        <li className="cursor-pointer transition-all duration-200 transform hover:text-[#84A600] hover:-translate-y-1">Series</li>
+                        <li className="cursor-pointer transition-all duration-200 transform hover:text-[#84A600] hover:-translate-y-1">Filmes</li>
                     </ul>
                 </nav>
             </div>
