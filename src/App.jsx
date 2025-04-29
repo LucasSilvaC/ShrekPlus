@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-d
 import Home from './pages/home';
 import Profile from './pages/profile';
 import Addprofile from './pages/add_profile';
+import Series from './pages/series';
 
 export default function App() {
   return (
@@ -13,8 +14,7 @@ export default function App() {
         <Route path="/home" element={<Home />} />
         <Route path="/profile" element={<Profile />} />
         <Route path="/addprofile" element={<Addprofile />} />
-        {/* <Route path="/register" element={<Registrar />} />
-        <Route path="/login" element={<Login />} /> */}
+        <Route path="/series" element={<Series />} />
       </Routes>
     </Router>
   );

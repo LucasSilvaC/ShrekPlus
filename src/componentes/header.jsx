@@ -25,7 +25,7 @@ export default function Header() {
                     style={{ transform: isExpanded ? 'translateX(-50px)' : 'translateX(0)' }}
                 >
                     <IoSearchOutline
-                        className="text-amber-50 text-3xl cursor-pointer hover:text-[#84A600]"
+                        className="text-white text-3xl cursor-pointer hover:text-[#84A600]"
                         onClick={() => setIsExpanded(!isExpanded)}
                     />
                     <input
@@ -36,9 +36,9 @@ export default function Header() {
                 </div>
 
                 <nav>
-                    <ul className="flex gap-10 text-amber-50 text-2xl">
+                    <ul className="flex gap-10 text-white text-2xl">
                         <li className="cursor-pointer transition-all duration-200 transform hover:text-[#84A600] hover:-translate-y-1" onClick={() => navigate("/home")}>Home</li>
-                        <li className="cursor-pointer transition-all duration-200 transform hover:text-[#84A600] hover:-translate-y-1">Series</li>
+                        <li className="cursor-pointer transition-all duration-200 transform hover:text-[#84A600] hover:-translate-y-1"  onClick={() => navigate("/series")}>Series</li>
                         <li className="cursor-pointer transition-all duration-200 transform hover:text-[#84A600] hover:-translate-y-1">Filmes</li>
                     </ul>
                 </nav>

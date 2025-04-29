@@ -5,8 +5,8 @@ import Category from '../componentes/category';
 import Card from '../componentes/card';
 import List from '../componentes/list';
 
-export default function Home() {
-  const IsPage = true;
+export default function Series() {
+  const IsPage = false;
   return (
     <>
       <Header />
